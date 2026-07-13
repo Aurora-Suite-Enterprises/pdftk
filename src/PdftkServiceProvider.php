@@ -2,10 +2,8 @@
 
 namespace AuroraSuite\Pdftk;
 
-use LogicException;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AuroraSuite\Pdftk\Commands\PdftkCommand;
 
 class PdftkServiceProvider extends PackageServiceProvider
 {
@@ -18,7 +16,6 @@ class PdftkServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('pdftk')
-            ->hasConfigFile()
-        ;
+            ->hasConfigFile();
     }
 }

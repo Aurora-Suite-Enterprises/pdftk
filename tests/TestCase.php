@@ -2,9 +2,9 @@
 
 namespace AuroraSuite\Pdftk\Tests;
 
+use AuroraSuite\Pdftk\PdftkServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AuroraSuite\Pdftk\PdftkServiceProvider;
 
 class TestCase extends Orchestra
 {
