@@ -1,5 +1,7 @@
 <?php
 
-it('can test', function () {
-    dump(config('pdftk.binary_path'));
+use function PHPUnit\Framework\assertEquals;
+
+it('reads architecture from config', function () {
+    assertEquals(trim(shell_exec('uname -m')), config('pdftk.architecture'));
 });
