@@ -16,7 +16,7 @@ class Pdf extends \mikehaertl\pdftk\Pdf
             $this->_command = new Command(
                 $this->getBinaryPath(
                     match (config('pdftk.architecture')) {
-                        'aarch64' => 'pdftk-arm64',
+                        'aarch64' => 'pdftk-aarch64',
                         'x86_64' => 'pdftk-x86_64',
                         default => throw new LogicException('Unsupported architecture: '.config('pdftk.architecture')),
                     }
